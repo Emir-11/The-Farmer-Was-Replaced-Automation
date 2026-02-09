@@ -48,11 +48,11 @@ açılan **can_harvest()** isimli **boolean** değeri döndüren kontrolcüyü k
 - Aynı zamanda **Çalı(Bush)** kilidin açtım. Çimene göre daha yavaş yetişiyor, hasattan sonra tekrar ekmem gerekiyor ve kaynaklarıma odun ekliyor. Bu bitki hasadı için **can_harvest()** komutunu
 kullanmaya devam edeceğim. 3 karelik alanda da ekim yapıp hasat etmem için ise **move("Yön")** komutunu kullanacağım.
 - Açtığım yeni aşama sayesinde tarlam 3x3 karelik bir alanım olacak şekilde genişledi. Artık sadece yukarı yada aşağı yönde değil, sağ ve sol yönleri de kullanarak drone yönlendirmesi yapmam gerekiyor.
-Bunun için ise kullandığım yöntem şu: Eğer drone altındaki ekin olgunlaşmışsa hasat ediyor ve yukarı yönde hareket ediyor. Bu sayede altındaki ekin yetişirken bi üstteki ekinin durumunu kontrol edip
-ilerleyeceğim yönü beklirlememe yardımcı oluyor. Çünkü eğer üstteki ekin daha olgunlaşmamışsa bir sağ yönde hareket ediyor ve aynı hareketi burda da uyguluyor. Bu sayede dik bir hiza halindeki 3 ekin
-yetişme sürecindeyken diğer 2x3'lük kısımdaki ekinlerin olgunlaşma durumunu en erken zamanda kontrol edebiliyorum ve olgunlaşmış olması halinde hemen hasat ediyorum. Bu süreçte bir yandan arkamda kalan
-ekinler olgunlaşana kadar diğer ekinleri hasat ediyorum ve en sağdaki sütuna geldiğimde drone hemen ilk hasat edilip yenisi ekilen ekinin üzerine gidip onu hasat ediyor. Ancak drone biraz yavaş kaldığı
-için ben 3. sütuna geçtiğimde 1. sütundaki ekinler olgunlaşmış oluyor bu yüzden drone hızlandırma aşamasını açmalıyım.
+Bunun için ise kullandığım yöntem şu: Eğer drone altındaki ekin olgunlaşmışsa hasat ediyor, tekrar çalı ekiyor ve yukarı yönde hareket ediyor. Bu sayede altındaki ekin yetişirken bi üstteki ekinin
+durumunu kontrol edip ilerleyeceğim yönü beklirlememe yardımcı oluyor. Çünkü eğer üstteki ekin daha olgunlaşmamışsa bir sağ yönde hareket ediyor ve aynı hareketi burda da uyguluyor. Bu sayede dik bir
+hiza halindeki 3 ekin yetişme sürecindeyken diğer 2x3'lük kısımdaki ekinlerin olgunlaşma durumunu en erken zamanda kontrol edebiliyorum ve olgunlaşmış olması halinde hemen hasat ediyorum.
+Bu süreçte bir yandan arkamda kalan ekinler olgunlaşana kadar diğer ekinleri hasat ediyorum ve en sağdaki sütuna geldiğimde drone hemen ilk hasat edilip yenisi ekilen ekinin üzerine gidip onu
+hasat ediyor. Ancak drone biraz yavaş kaldığı için ben 3. sütuna geçtiğimde 1. sütundaki ekinler olgunlaşmış oluyor bu yüzden drone hızlandırma aşamasını açmalıyım.
 
   # 📃 Kod : src/02_bush_and_wood.py
 
