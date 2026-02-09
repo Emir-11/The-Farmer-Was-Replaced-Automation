@@ -35,8 +35,9 @@ Bu kısımda oyundaki ilerleme ve gelişmelerimi tarihleriyle yazarak neler yapt
   **📈 Seviye: Çimen (Grass)**
 - Oyuna başladım ve şuanda tek bir karelik bir çimen üzerindeyim. **harvest()** komutunu tekrar tekrar çalıştırarak çimen hasat ediyorum.
 - 5 çimen hasadım karşılığında **While** aşamasının kilidini açtım. **While True:** komutu kullanarak tekrar tekrar kod çalıştırmama gerek kalmadan sonsuz döngü ile tek kare üzerinde hasat yapıyorum.
-- Drone artık açtığım aşama sebebiyle daha hızlı ve çimeni daha olgunlaşmadan hasat ediyor ancak olgunlaşmamış bir bitki hasat edilirse kaynaklarımıza eklenmiyor. Ancak yeni aşama ile birlikte açılan
-**can_harvest()** isimli boolean sayesinde sonsuz döngüme bir **if can_harvest() == True:** komutu ekledim ve bu sayede eğer drone altındaki ekin olgunlaşmışsa hasat ediyor.
+- Drone artık açtığım aşama sebebiyle daha hızlı ve çimeni daha olgunlaşmadan hasat ediyor ancak olgunlaşmamış bir bitki hasat edilirse kaynaklarımıza eklenmiyor. Bu sebeple yeni aşama ile birlikte
+açılan **can_harvest()** isimli **boolean** değeri döndüren kontrolcüyü kullanarak olgunlaşma bilgisine erişebiliyorum.
+- Sonsuz döngüme bu değer için bir **Boolean** kontrolcüsü ekledim ve bu sayede eğer drone sadece altındaki ekin olgunlaşmışsa hasat ediyor.
 
   # 📃 Kod : src/01_grass_automation.py
 
