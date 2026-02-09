@@ -52,7 +52,8 @@ Bunun için ise kullandığım yöntem şu: Eğer drone altındaki ekin olgunla�
 durumunu kontrol edip ilerleyeceğim yönü beklirlememe yardımcı oluyor. Çünkü eğer üstteki ekin daha olgunlaşmamışsa bir sağ yönde hareket ediyor ve aynı hareketi burda da uyguluyor. Bu sayede dik bir
 hiza halindeki 3 ekin yetişme sürecindeyken diğer 2x3'lük kısımdaki ekinlerin olgunlaşma durumunu en erken zamanda kontrol edebiliyorum ve olgunlaşmış olması halinde hemen hasat ediyorum.
 Bu süreçte bir yandan arkamda kalan ekinler olgunlaşana kadar diğer ekinleri hasat ediyorum ve en sağdaki sütuna geldiğimde drone hemen ilk hasat edilip yenisi ekilen ekinin üzerine gidip onu
-hasat ediyor. Ancak drone biraz yavaş kaldığı için ben 3. sütuna geçtiğimde 1. sütundaki ekinler olgunlaşmış oluyor bu yüzden drone hızlandırma aşamasını açmalıyım.
+hasat ediyor.
+- Ancak drone biraz yavaş kaldığı için ben 3. sütuna geçtiğimde 1. sütundaki ekinler olgunlaşmış oluyor bu yüzden drone hızlandırma aşamasını açmalıyım.
 
   # 📃 Kod : src/02_bush_and_wood.py
 
