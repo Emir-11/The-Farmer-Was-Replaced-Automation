@@ -11,7 +11,7 @@ Drone tamamen yazdığımız kodlar dahilinde harekete geçiyor. Ancak her komut
 aşamalardaki teknikleri birleştirip kullanarak yeni aşamaları açmanızı sağlayan bir yapıda ilerliyor. Yaptığımız hasatlar ile yeni aşamaların kilidi açılabiliyoruz. Örneğin bir önceki aşamada
 oyunun **"Entities.Bush"** isimli bitkisini sadece bu isimle kullanabiliyorken hasatlarımızı kullanarak açtığımız **"değişken atama"** aşaması sayesinde adını farklı bir değişkene atayarak
 **(örneğin: "Entities.Bush = cali")** yazdığımız kodlarda kullanabiliyoruz. Başlangıçta sadece çimen hasat edebiliyorken açabildiğimiz aşamalar sayesinde farklı ekinlerinde kildini açabiliyoruz.
-ilk ekinlerin kuralları basit ancak ilerleyen süreçte açılabilen ekinlerin daha hızlı büyümesi için belli şartların karşılanması gerekiyor. Örneğin **ağaç (tree)** bitkisinin üst, sağ veya sol
+ilk ekinlerin kuralları basit ancak ilerleyen süreçte açılabilen ekinlerin daha hızlı büyümesi için belli şartların karşılanması gerekiyor. Örneğin **ağaç (tree)** bitkisinin alt, üst, sağ veya sol
 karesinde bir ağaç daha ekilmişse büyüme hızı 2 kat yavaşlıyor. Bu sebeple ağaç ekimi yapacaksak tarlanın bu şartlarına uygun noktalarına ekim yapmamız gerekiyor. Bu gibi birçok problem çözme
 kabiliyetini geliştirme odaklı aşamalardan oluşuyor.
 
