@@ -44,10 +44,9 @@ Bu kısımda oyundaki ilerleme ve gelişmelerimi tarihleriyle yazarak neler yapt
 
   **##📈 Seviye: Çalı (Bush)**
 - Tarlamın boyutunu üst üste 3 kare olacak şekilde uzattım ve drone ile hareket etmemi sağlayan **move("Yön")** komutunun kilidini açtım.
--
-Aynı zamanda **Çalı(Bush)** kilidin açtım. Çimene göre daha yavaş yetişiyor, hasattan sonra tekrar ekmem gerekiyor ve kaynaklarıma odun ekliyor. Bu bitki hasadı için **can_harvest()** komutunu
+- Aynı zamanda **Çalı(Bush)** kilidin açtım. Çimene göre daha yavaş yetişiyor, hasattan sonra tekrar ekmem gerekiyor ve kaynaklarıma odun ekliyor. Bu bitki hasadı için **can_harvest()** komutunu
 kullanmaya devam edeceğim. 3 karelik alanda da ekim yapıp hasat etmem için ise **move("Yön")** komutunu kullanacağım.
--Açtığım yeni aşama sayesinde tarlam 3x3 karelik bir alanım olacak şekilde genişledi. Artık sadece yukarı yada aşağı yönde değil, sağ ve sol yönleri de kullanarak drone yönlendirmesi yapmam gerekiyor.
+- Açtığım yeni aşama sayesinde tarlam 3x3 karelik bir alanım olacak şekilde genişledi. Artık sadece yukarı yada aşağı yönde değil, sağ ve sol yönleri de kullanarak drone yönlendirmesi yapmam gerekiyor.
 Bunun için ise kullandığım yöntem şu: Eğer drone altındaki ekin olgunlaşmışsa hasat ediyor ve yukarı yönde hareket ediyor. Bu sayede altındaki ekin yetişirken bi üstteki ekinin durumunu kontrol edip
 ilerleyeceğim yönü beklirlememe yardımcı oluyor. Çünkü eğer üstteki ekin daha olgunlaşmamışsa bir sağ yönde hareket ediyor ve aynı hareketi burda da uyguluyor. Bu sayede dik bir hiza halindeki 3 ekin
 yetişme sürecindeyken diğer 2x3'lük kısımdaki ekinlerin olgunlaşma durumunu en erken zamanda kontrol edebiliyorum ve olgunlaşmış olması halinde hemen hasat ediyorum. Bu süreçte bir yandan arkamda kalan
