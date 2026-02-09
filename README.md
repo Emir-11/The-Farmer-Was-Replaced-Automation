@@ -44,7 +44,8 @@ Bu kısımda oyundaki ilerleme ve gelişmelerimi tarihleriyle yazarak neler yapt
 
   **##📈 Seviye: Çalı (Bush)**
 - Tarlamın boyutunu üst üste 3 kare olacak şekilde uzattım ve drone ile hareket etmemi sağlayan **move("Yön")** komutunun kilidini açtım.
-- Aynı zamanda **Çalı(Bush)** kilidin açtım. Çimene göre daha yavaş yetişiyor, hasattan sonra tekrar ekmem gerekiyor ve kaynaklarıma odun ekliyor. Bu bitki hasadı için **can_harvest()** komutunu
+-
+Aynı zamanda **Çalı(Bush)** kilidin açtım. Çimene göre daha yavaş yetişiyor, hasattan sonra tekrar ekmem gerekiyor ve kaynaklarıma odun ekliyor. Bu bitki hasadı için **can_harvest()** komutunu
 kullanmaya devam edeceğim. 3 karelik alanda da ekim yapıp hasat etmem için ise **move("Yön")** komutunu kullanacağım.
 -Açtığım yeni aşama sayesinde tarlam 3x3 karelik bir alanım olacak şekilde genişledi. Artık sadece yukarı yada aşağı yönde değil, sağ ve sol yönleri de kullanarak drone yönlendirmesi yapmam gerekiyor.
 Bunun için ise kullandığım yöntem şu: Eğer drone altındaki ekin olgunlaşmışsa hasat ediyor ve yukarı yönde hareket ediyor. Bu sayede altındaki ekin yetişirken bi üstteki ekinin durumunu kontrol edip
@@ -68,5 +69,5 @@ toprağa çevirtecek, ardından **havuç** ektireceğim. Eğer zemin şartları 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **##📈 Seviye: Ağaç (Tree)**
--  **Ağaç (Tree)** bitkisinin kilidini açtım. Bu bitki çalıdan farkı daha fazla odun hasat edilebilmesi. Ancak bu bitkinin en dikkat edilmesi gereken özelliği, üst, alt, sol veya sağ tarafında bir ağaç
+-  **Ağaç (Tree)** bitkisinin kilidini açtım. Bu bitkinin çalıdan farkı daha fazla odun hasat edilebilmesi. Ancak bu bitkinin en dikkat edilmesi gereken özelliği, üst, alt, sol veya sağ tarafında bir ağaç
 bulunursa 2x daha yavaş yetişmesi. Yani eğer ağaç ekmek istiyorsam ve minimum sürede olgunlaşmasını istiyorsam çevresindeki 1x1'lik alana ağaç ekmemeliyim.
