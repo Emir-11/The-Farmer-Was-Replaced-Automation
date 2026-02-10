@@ -30,6 +30,27 @@ Bu süreçte sadece oyun oynamıyor, aynı zamanda bazı teknik yeteneklerimi ge
 ## 📜 Gelişim Günlüğü (DevLog)
 Bu kısımda oyundaki ilerleme ve gelişmelerimi tarihleriyle yazarak neler yaptığımın kaydını tutacağım.
 
+###🗓️ 10.02.2026 
+-----------------
+**##📈 Seviye: Ağaç (Tree)**
+-  **Ağaç (Tree)** bitkisinin kilidini açtım. Bu bitkinin çalıdan farkı daha fazla odun hasat edilebilmesi. Ancak bu bitkinin en dikkat edilmesi gereken özelliği, üst, alt, sol veya sağ tarafında bir ağaç
+bulunursa 2x daha yavaş yetişmesi. Yani eğer ağaç ekmek istiyorsam ve minimum sürede olgunlaşmasını istiyorsam çevresindeki 1x1'lik alana ağaç ekmemeliyim.
+- Çapraz bir ekim yapabilmek adına drone bulunduğu sütunun sıra sayısını kontrol edecek ve sütun sırası çift sayı ise olgunlaşma durumunu kontrol edecek ve hasat edilebilir ise hasat edecek, ardından bulunduğu yatay sıra sayısı çift ise ağaç dikecek, değil ise çalı ekecek. ve yukarı yönde hareket edecek. Sütun sıra sayısı tek ise ekim sırasını tam tersi olarak yapacak. Eğer bulunduğu sütunda hasat edilebilir birşey yoksa sağ yönde hareket edecek. Bu sayede tarla boyunca kontrol sağlayıp ekin ekip en erken sürede olgunlaşmalarını sağlayıp hasat gerçekleştirebileceğim.
+- Kodumun fazla uzun, kontrol gerektiren ve karmaşık bir hal almaya başladığını farkettiğim için **def** komutunun kilidini açtım ve artık olgunlaşma durumuna göre hasat etmesi yada hiçbirşey yapmaması
+için **olgunsatopla** ismini verdiğim bir fonksiyon oluşturdum.
+- Tüm tarla boyunca bulunduğu konuma göre drone için sabit bir rota oluşturmak beni biraz zorladı ancak işin sonunda drone için sütunu boydan boya kontrol edip durumuna ve konumuna göre hasat edip etmemesi aynı zamanda ilerleyeceği yer yönü belirleyebileceği dinamik bir karar mekanizması oluşturdum. Bu sayede drone, sadece tarlayı gezmekle kalmıyor, her hücrede veriyi analiz ederek (olgunluk, sütun sırası vb.) operasyonel önceliklerini kendi belirliyor."
+- Yazmış olduğum kodda her koordinat için bir if-else döngüsü olduğunu ve bunun da kodumun karmaşık bir yapıda görünmesine sebep olduğunu farkettim. Bu sebeple her sütun ve satır için hesaplama yapmak yerine neden 2 koordinat bilgisini tek seferde alarak hesaplama yapmıyorum diye düşündüm ve bir nevi dama tahtası düzenini bir matematiksel model oluşturarak bu kontrolü tek bir fonksiyona indirgedim.
+Bu sayede kod satır sayım ciddi bir oranda kısalırken, sadece 6x6'lık bir modelde çalışan kodum artık daha dinamik bir yapıda ve bütün uzunluklar için kullanılabilir hale geldi.
+
+  # 📃 Kod : src/01_grass_automation.py
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**##📈 Seviye: Balkabağı (Pumpkin)**
+- **Balkabağı (Pumpkin)** kilidini açtım. Bu bitkinin özelliği ise 1x1 menzilindeki diğer balkabakları ile birleşerek daha büyük ve değerli bir balkabağına dönüşebilmesi. Ancak balkabakları bazen ölü yetişebiliyor ve ölü yetişen balkabakları diğerleri ile birleşemiyor, hasat edildiğinde kaynaklarımıza eklenmiyor. Bu mekanik, algoritmamı sadece tek bir hücreyi yönetmekten çıkarıp, tüm tarlayı
+bir bütün olarak gören bir 'Alan Optimizasyonu' mantığına taşıdı. Tüm balkabaklarının senkronize bir şekilde büyümesini sağlamak ve ölü bitkilerin en erken sürede arındırılması için zamanlama ve kaynak yönetimini en ince ayrıntısına kadar planladığım bir sistem geliştirmeye çalışacağım.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ###🗓️ 09.02.2026 
 ----------------- 
   **📈 Seviye: Çimen (Grass)**
@@ -39,7 +60,7 @@ Bu kısımda oyundaki ilerleme ve gelişmelerimi tarihleriyle yazarak neler yapt
 açılan **can_harvest()** isimli **boolean** değeri döndüren kontrolcüyü kullanarak drone'un sonuca göre hasat gerçekleştirmesi üzere kodlayacağım.
 - Sonsuz döngüme bu değer için olgunlaşma kontrolcüsünü ekledim ve artık drone sadece altındaki ekin olgunlaşmışsa hasat edecek şekilde programlandı.
 
-  # 📃 Kod : src/01_grass_automation.py
+  # 📃 Kod : src/4_tree_and_wood.py
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -68,7 +89,3 @@ toprağa çevirtecek, ardından **havuç** ektireceğim. Eğer zemin şartları 
   # 📃 Kod : src/03_carrot.py
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-**##📈 Seviye: Ağaç (Tree)**
--  **Ağaç (Tree)** bitkisinin kilidini açtım. Bu bitkinin çalıdan farkı daha fazla odun hasat edilebilmesi. Ancak bu bitkinin en dikkat edilmesi gereken özelliği, üst, alt, sol veya sağ tarafında bir ağaç
-bulunursa 2x daha yavaş yetişmesi. Yani eğer ağaç ekmek istiyorsam ve minimum sürede olgunlaşmasını istiyorsam çevresindeki 1x1'lik alana ağaç ekmemeliyim.
