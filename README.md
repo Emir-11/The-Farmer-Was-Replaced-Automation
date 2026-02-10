@@ -52,7 +52,7 @@ için **olgunsatopla** ismini verdiğim bir fonksiyon oluşturdum.
 - Yazmış olduğum kodda her koordinat için bir if-else döngüsü olduğunu ve bunun da kodumun karmaşık bir yapıda görünmesine sebep olduğunu farkettim. Bu sebeple her sütun ve satır için hesaplama yapmak yerine neden 2 koordinat bilgisini tek seferde alarak hesaplama yapmıyorum diye düşündüm ve bir nevi dama tahtası düzenini bir matematiksel model oluşturarak bu kontrolü tek bir fonksiyona indirgedim.
 Bu sayede kod satır sayım ciddi bir oranda kısalırken, sadece 6x6'lık bir modelde çalışan kodum artık daha dinamik bir yapıda ve bütün uzunluklar için kullanılabilir hale geldi.
 
-  # 📃 Kod : src/04_Tree_and_Wood.py
+  # 📃 Kod : [Kod: src/04_tree_and_wood.py](src/04_tree_and_wood.py)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -62,7 +62,7 @@ bir bütün olarak gören bir 'Alan Optimizasyonu' mantığına taşıdı. Tüm 
 -  **while** ve **for** döngülerini iç içe kullanarak, bir **Durum Doğrulaması** katmanı oluşturdum. Drone, tüm tarlayı bir kontrol listesi üzerinden tarıyor. Boşlukları dolduruyor, "ölü" durumundaki bitkileri sistemden temizleyip güncelliyor. Tüm birimler **Hazır** sinyali vermeden ana fonksiyon **harvest** çalışmıyor.
 -  Aynı zamanda drone kontrolü için devamlı olarak oyunun sunduğu tek seferde 1 kare ilerleme sağlayan komutun yetersiz geldiğini farkettim ve mevcut konum verilerini kullanan ve drone'u hedef koordinata taşıyan kendi özel navigasyon fonksiyonumu yazdım. Bu sayede **for / range** kullanarak drone ile tüm tarla boyunca ilerleme yapabiliyorum.
 
-  # 📃 Kod : src/05_pumpkin.py
+  # 📃 Kod : [Kod: src/05_pumpkin.py](src/05_pumpkin.py)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -70,7 +70,7 @@ bir bütün olarak gören bir 'Alan Optimizasyonu' mantığına taşıdı. Tüm 
 -  Bu aşamada, oyunun en ilgimi çeken mekaniklerinden biri olan Polyculture sistemininin kilidini açtım. Bu sistemin özelliği neyi nereye ekeceğimde bonus hasat elde edeceğimi oyunun belirliyor olması.
 -  **get_companion()** isimli fonksiyonda dönen iç içe geçmiş veri yapılarını **(bitki_tipi, (x, y))** doğru indeksleme yöntemleriyle parçalayarak sisteme entegre ettim. Bu çalışma yazılımda "Reactive" (Tepkisel) programlama mantığını kavramamı sağladı.
 
-  # 📃 Kod : src/06_dynamic_companion_bot.py
+  # 📃 Kod : [Kod: src/06_dynamic_companion_bot.py](src/06_dynamic_companion_bot.py)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ###🗓️ 09.02.2026 
@@ -82,7 +82,7 @@ bir bütün olarak gören bir 'Alan Optimizasyonu' mantığına taşıdı. Tüm 
 açılan **can_harvest()** isimli **boolean** değeri döndüren kontrolcüyü kullanarak drone'un sonuca göre hasat gerçekleştirmesi üzere kodlayacağım.
 - Sonsuz döngüme bu değer için olgunlaşma kontrolcüsünü ekledim ve artık drone sadece altındaki ekin olgunlaşmışsa hasat edecek şekilde programlandı.
 
-  # 📃 Kod : src/01_grass_automation.py
+  # 📃 Kod : [Kod: src/01_grass_automation.py](src/01_grass_automation.py)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ Bu süreçte bir yandan arkamda kalan ekinler olgunlaşana kadar diğer ekinleri
 hasat ediyor.
 - Ancak drone biraz yavaş kaldığı için ben 3. sütuna geçtiğimde 1. sütundaki ekinler olgunlaşmış oluyor bu yüzden drone hızlandırma aşamasını açmalıyım.
 
-  # 📃 Kod : src/02_bush_and_wood.py
+  # 📃 Kod : [Kod: src/02_bush_and_wood.py](src/02_bush_and_wood.py)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -108,6 +108,6 @@ olan **çimen (grass)** zeminini **toprak (soil)** olarak değiştirmeliyim. Bun
 **get_ground_type()** komutunu kullanarak drone altındaki zeminin hangi tür olduğu bilgisini aldıracak ve eğer zemin **çimen** ise yine aşama ile birlikte gelen **till()** komutunu kullanarak
 toprağa çevirtecek, ardından **havuç** ektireceğim. Eğer zemin şartları karşılıyorsa sadece olgunluk durumu kontrol edilecek, olgunlaştıysa hasat edilecek ve yerine tekrar **havuç** ekecek.
 
-  # 📃 Kod : src/03_carrot.py
+  # 📃 Kod : [Kod: src/03_carrot.py](src/03_carrot.py)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
