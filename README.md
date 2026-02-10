@@ -1,9 +1,19 @@
-# 🚜 The Farmer Was Replaced: Algorithmic Farming Journey
+**🚜 Algoritmik Tarım Otomasyonu (The Farmer Was Replaced)**
 
-Bu repo, **The Farmer Was Replaced** oyununda karşılaştığım problemleri yazılım mantığıyla nasıl çözdüğümü, algoritmik düşünme becerilerimi nasıl geliştirdiğimi ve 
-otomasyon süreçlerimi belgelemek amacıyla oluşturulmuştur.
+Bu proje, bir Yönetim Bilişim Sistemleri (YBS) öğrencisi olarak algoritma kurma ve problem çözme yeteneklerimi geliştirmek için yürüttüğüm bir çalışmadır. Bir drone'u Python tabanlı kodlar yazarak kontrol ediyor ve tarladaki iş süreçlerini en verimli hale getirmeyi hedefliyorum.
 
-Bir **Yönetim Bilişim Sistemleri (YBS)** öğrencisi olarak hedefim, oyunun sunduğu Python benzeri kod sistemini kullanarak "maksimum hasat ve minimum satır kod" prensibiyle ilerlemek.
+**🛠 Neler Yapıyorum?**
+
+**Süreç Otomasyonu:** Sadece tek bir komutla tüm tarlanın ekim, sulama ve hasat işlemlerini otomatik hale getiriyorum.
+
+
+**Matematiksel Modelleme:** Ağaçların birbirinin yetişmesini yavaşlatması gibi durumlarda matematiksel modeller kullanarak ekim yapıyorum.
+
+
+**Verimlilik:** Karmaşık ve uzun kodları, fonksiyonlar kullanarak daha kısa, okunabilir ve hızlı hale getiriyorum.
+
+
+**Hata Ayıklama:** Drone hatalı gittiğinde veya bitkiler ölü yetiştiğinde koddaki mantık hatalarını bulup düzeltiyorum.
 
 ## 🎮 Oyun Mantığı
 - Oyundaki amacımız bir drone ile tarlamızda ekin ekip hasat yapmak. Hasatlarımız kaynaklarımıza ekleniyor ve bazı bitkileri ekebilmek için diğer kaynaklarımızdan bazıları harcanıyor.
@@ -58,7 +68,9 @@ bir bütün olarak gören bir 'Alan Optimizasyonu' mantığına taşıdı. Tüm 
 
 **##📈 Seviye: Polyculture**
 -  Bu aşamada, oyunun en ilgimi çeken mekaniklerinden biri olan Polyculture sistemininin kilidini açtım. Bu sistemin özelliği neyi nereye ekeceğimde bonus hasat elde edeceğimi oyunun belirliyor olması.
--  **get_companion()** isimli fonksiyonda dönen iç içe geçmiş veri yapılarını **(bitki_tipi, (x, y))** doğru indeksleme yöntemleriyle parçalayarak sisteme entegre ettim. Bu çalışma ile yazılımda "Reactive" (Tepkisel) programlama mantığını kavramamı sağladı.
+-  **get_companion()** isimli fonksiyonda dönen iç içe geçmiş veri yapılarını **(bitki_tipi, (x, y))** doğru indeksleme yöntemleriyle parçalayarak sisteme entegre ettim. Bu çalışma yazılımda "Reactive" (Tepkisel) programlama mantığını kavramamı sağladı.
+
+  # 📃 Kod : src/06_dynamic_companion_bot.py
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ###🗓️ 09.02.2026 
