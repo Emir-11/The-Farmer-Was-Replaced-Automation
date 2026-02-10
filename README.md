@@ -49,6 +49,16 @@ Bu sayede kod satır sayım ciddi bir oranda kısalırken, sadece 6x6'lık bir m
 **##📈 Seviye: Balkabağı (Pumpkin)**
 - **Balkabağı (Pumpkin)** kilidini açtım. Bu bitkinin özelliği ise 1x1 menzilindeki diğer balkabakları ile birleşerek daha büyük ve değerli bir balkabağına dönüşebilmesi. Ancak balkabakları bazen ölü yetişebiliyor ve ölü yetişen balkabakları diğerleri ile birleşemiyor, hasat edildiğinde kaynaklarımıza eklenmiyor. Bu mekanik, algoritmamı sadece tek bir hücreyi yönetmekten çıkarıp, tüm tarlayı
 bir bütün olarak gören bir 'Alan Optimizasyonu' mantığına taşıdı. Tüm balkabaklarının senkronize bir şekilde büyümesini sağlamak ve ölü bitkilerin en erken sürede arındırılması için zamanlama ve kaynak yönetimini en ince ayrıntısına kadar planladığım bir sistem geliştirmeye çalışacağım.
+-  **while** ve **for** döngülerini iç içe kullanarak, bir **Durum Doğrulaması** katmanı oluşturdum. Drone, tüm tarlayı bir kontrol listesi üzerinden tarıyor. Boşlukları dolduruyor, "ölü" durumundaki bitkileri sistemden temizleyip güncelliyor. Tüm birimler **Hazır** sinyali vermeden ana fonksiyon **harvest** çalışmıyor.
+-  Aynı zamanda drone kontrolü için devamlı olarak oyunun sunduğu tek seferde 1 kare ilerleme sağlayan komutun yetersiz geldiğini farkettim ve mevcut konum verilerini kullanan ve drone'u hedef koordinata taşıyan kendi özel navigasyon fonksiyonumu yazdım. Bu sayede **for / range** kullanarak drone ile tüm tarla boyunca ilerleme yapabiliyorum.
+
+  # 📃 Kod : src/05_pumpkin.py
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**##📈 Seviye: Polyculture**
+-  Bu aşamada, oyunun en ilgimi çeken mekaniklerinden biri olan Polyculture sistemininin kilidini açtım. Bu sistemin özelliği neyi nereye ekeceğimde bonus hasat elde edeceğimi oyunun belirliyor olması.
+-  **get_companion()** isimli fonksiyonda dönen iç içe geçmiş veri yapılarını **(bitki_tipi, (x, y))** doğru indeksleme yöntemleriyle parçalayarak sisteme entegre ettim. Bu çalışma ile yazılımda "Reactive" (Tepkisel) programlama mantığını kavramamı sağladı.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ###🗓️ 09.02.2026 
