@@ -42,7 +42,7 @@ için **olgunsatopla** ismini verdiğim bir fonksiyon oluşturdum.
 - Yazmış olduğum kodda her koordinat için bir if-else döngüsü olduğunu ve bunun da kodumun karmaşık bir yapıda görünmesine sebep olduğunu farkettim. Bu sebeple her sütun ve satır için hesaplama yapmak yerine neden 2 koordinat bilgisini tek seferde alarak hesaplama yapmıyorum diye düşündüm ve bir nevi dama tahtası düzenini bir matematiksel model oluşturarak bu kontrolü tek bir fonksiyona indirgedim.
 Bu sayede kod satır sayım ciddi bir oranda kısalırken, sadece 6x6'lık bir modelde çalışan kodum artık daha dinamik bir yapıda ve bütün uzunluklar için kullanılabilir hale geldi.
 
-  # 📃 Kod : src/01_grass_automation.py
+  # 📃 Kod : src/04_Tree_and_Wood.py
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ bir bütün olarak gören bir 'Alan Optimizasyonu' mantığına taşıdı. Tüm 
 açılan **can_harvest()** isimli **boolean** değeri döndüren kontrolcüyü kullanarak drone'un sonuca göre hasat gerçekleştirmesi üzere kodlayacağım.
 - Sonsuz döngüme bu değer için olgunlaşma kontrolcüsünü ekledim ve artık drone sadece altındaki ekin olgunlaşmışsa hasat edecek şekilde programlandı.
 
-  # 📃 Kod : src/4_tree_and_wood.py
+  # 📃 Kod : src/01_grass_automation.py
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
