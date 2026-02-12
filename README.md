@@ -1,6 +1,7 @@
 **🚜 Algoritmik Tarım Otomasyonu (The Farmer Was Replaced)**
+- *Bu proje tamamen eğitim amaçlı hazırlanmış bir kişisel gelişim çalışmasıdır. Herhangi bir ticari amaç taşımamaktadır ve resmi bir niteliği bulunmamaktadır.*
 
-Bu proje, bir Yönetim Bilişim Sistemleri (YBS) öğrencisi olarak algoritma kurma ve problem çözme yeteneklerimi geliştirmek için yürüttüğüm bir çalışmadır. Bir drone'u Python tabanlı kodlar yazarak kontrol ediyor ve tarladaki iş süreçlerini en verimli hale getirmeyi hedefliyorum.
+Bir Yönetim Bilişim Sistemleri (YBS) öğrencisi olarak algoritma kurma ve problem çözme yeteneklerimi geliştirmek için yürüttüğüm bir çalışmadır. Bir drone'u Python tabanlı kodlar yazarak kontrol ediyor ve tarladaki iş süreçlerini en verimli hale getirmeyi hedefliyorum.
 
 **🛠 Neler Yapıyorum?**
 
